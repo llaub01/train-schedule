@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Gravy Train Schedule</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/scripts/train.js"></script>
+	<script src="assets/scripts/moment.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron text-left">
+				    <!-- <i class="fa fa-train fa-5x" aria-hidden="true"></i> -->
+				    <h1><i class="fa fa-train" aria-hidden="true"></i> Gravy Train Schedule</h1> 
+				    <p>Choo, choo... next stop my thighs.</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Train Listings</div>
+				  <div class="panel-body">
+				  	<table class="table table-striped">
+					    <thead>
+					      <tr>
+					        <th>Train Name</th>
+					        <th>Destination</th>
+					        <th>Arrival Freq</th>
+					        <th>Next Arrival</th>
+					        <th>It'll be here</th>
+					        <th>Remove</th>
+					      </tr>
+					    </thead>
+					    <tbody id="table-body"></tbody>
+					</table>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Add Train Info</div>
+				  <div class="panel-body">
+				  	<form>
+				  		<div class="form-group">
+						    <label for="email">Train Name</label>
+						    <input type="text" class="form-control" id="train-name">
+						</div>
+						<div class="form-group">
+						    <label for="dest">Destination</label>
+						    <input type="text" class="form-control" id="train-dest">
+						</div>
+						<div class="form-group">
+						    <label for="freq">Frequency (in min)</label>
+						    <input type="daytime-local" class="form-control" id="train-freq">
+						</div>
+						<div class="form-group">
+						    <label for="next-arr">Next Arrival</label>
+						    <input type="time" class="form-control" id="train-arrival">
+						</div>
+						<button id="submit-button" type="submit" class="btn btn-success">Submit</button>
+				  	</form>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

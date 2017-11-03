@@ -1,0 +1,9 @@
+.jumbotron {
+    color: white;
+    background-color: darkblue;
+}
+
+.panel-default>.panel-heading {
+    color: white;
+    background-color: darkblue;
+}
