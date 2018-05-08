@@ -1,2 +1,2 @@
 # train-schedule
-Simple train schedule app
+Train schedule app using HTML, CSS, Javascript and Firebase
